@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${title}">sratatat</h1>
+<!--<a href></a>TO BEDZIE DO GET'a-->
+<form method="post" th:action="@{/add}">
+    <p><input type="text" th:field="${article.title}" placeholder="Tytuł"></p>
+    <p><textarea th:field="${article.content}" placeholder="Treść"></textarea></p>
+    <p><input type="text" th:field="${article.author}" placeholder="Autor"></p>
+    <p><input type="submit" value="Dodaj"></p>
+
+</form>
+
+</body>
+</html>
